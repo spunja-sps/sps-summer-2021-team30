@@ -152,6 +152,11 @@ body {
   background-position: -350px 0; /* horizontal vertical */
 }
 
+.home-icon {
+  color: #fff;
+  height: 40px;
+}
+
 .right-child {
   background-color: #f5e4d7;
   padding: 5%;
