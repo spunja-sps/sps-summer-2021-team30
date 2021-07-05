@@ -29,6 +29,26 @@
     color: white;
   }
 
+.tabs .tab a{
+            color: white;
+            background-color: #a1887f;
+        }
+
+        .tabs .tab a:hover {
+            background-color:#a1887f;
+            color: white;
+        }
+
+        .tabs .tab a:focus.active {
+            background-color:#a1887f;
+            color:white;
+        }
+
+        .tabs .indicator {
+            background-color:#a1887f;
+        }
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
