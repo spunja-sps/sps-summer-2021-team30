@@ -19,19 +19,30 @@ public class UserInfoServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-    // Get the value entered in the form and the timestamp.
-    String textValue = Jsoup.clean(request.getParameter("user-input"), Whitelist.none());
+    // Get the values entered in the user sign-up page.
+    String firstName = Jsoup.clean(request.getParameter("first_name"), Whitelist.none());
+    String lastName = Jsoup.clean(request.getParameter("last_name"), Whitelist.none());
+    String email = Jsoup.clean(request.getParameter("email"), Whitelist.none());
+    String password = Jsoup.clean(request.getParameter("password"), Whitelist.none());
+    String userType = Jsoup.clean(request.getParameter("user_type"), Whitelist.none());
     long timestamp = System.currentTimeMillis();
 
     // Print the value so you can see it in the server logs.
-    System.out.println("This is what was submitted: " + textValue);
+    System.out.println("This is the first name: " + firstName);
+    System.out.println("This is the last name: " + firstName);
+    System.out.println("This is the email: " + firstName);
+    System.out.println("This is the password: " + firstName);
+    System.out.println("This is the userType: " + firstName);
 
     // Create entity to store in Datastore
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-    KeyFactory keyFactory = datastore.newKeyFactory().setKind("UserInfo");
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("User");
     FullEntity userEntity = Entity.newBuilder(keyFactory.newKey())
-                            .set("info", textValue)
-                            .set("timestamp", timestamp)
+                            .set("firstName", firstName)
+                            .set("lastName", lastName)
+                            .set("email", email)
+                            .set("password", password)
+                            .set("userType", userType)
                             .build();
     datastore.put(userEntity);
 
