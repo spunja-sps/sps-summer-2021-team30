@@ -14,7 +14,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
 
 @WebServlet("/user-info")
-public class FormHandlerServlet extends HttpServlet {
+public class UserInfoServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
