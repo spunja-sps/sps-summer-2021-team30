@@ -105,6 +105,10 @@ nav,
 section {
   display: block;
 }
+
+main {
+    height: 100vh;
+}
 body {
   line-height: 1;
 }
