@@ -2,14 +2,14 @@ package com.google.sps.dto;
 
 public class User {
 
-    private int id;
+    private long id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
     private String userType;
 
-    public User(int id, String firstName, String lastName, String email, String password, String userType) {
+    public User(long id, String firstName, String lastName, String email, String password, String userType) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -22,7 +22,7 @@ public class User {
 
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
