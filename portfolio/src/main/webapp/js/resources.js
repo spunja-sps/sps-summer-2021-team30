@@ -1,7 +1,12 @@
+/*
+load("nashorn:mozilla_compat.js");
+importClass(Resource.java);
+var resources = new Resource.java(1, "Invitation to Computer Science", "short description", Date());
+console.log(resources);
+*/
 
 var elem = document.querySelector('.sidenav');
 var instance = new M.Sidenav(elem);
-
 var el = document.querySelectorAll('.tab');
 
 // loads Materialize sidebar and tabs
@@ -12,14 +17,20 @@ var el = document.querySelectorAll('.tab');
 
 // Make list of resources using Resources class
 
+window.onload = function() {
+ //alert("let's go!");
+  this.loadResources();
+}
+
 /**
  * Gets the list of Resources
  */
-function loadResources() {
-    var resourcesList = [];
+async function loadResources() {
+    const serverResponse = await fetch('/resource');
+    const resourceList = await serverResponse.json();
     const resourceListElement = document.getElementById('resources-list');
-    resourcesList.forEach(function(element) {
-        resourcesListElement.appendChild(createResourceElement(element));
+    resourceList.forEach(function(element) {
+        resourceListElement.appendChild(createResourceElement(element));
     });
 }
 
