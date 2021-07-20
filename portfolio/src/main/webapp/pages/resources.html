@@ -55,7 +55,8 @@
     <main>
         <div class="row">
             <div class="col s12">
-            <ul class="tabs brown lighten-2">
+                <div class="white-text">
+            <ul class="tabs brown lighten-2 white-text">
                 <li class="tab col s2"><a href="#start">Getting Started</a></li>
                 <li class="tab col s2"><a href="#java">Java Development</a></li>
                 <li class="tab col s2"><a href="#web">Web Development</a></li>
@@ -63,6 +64,7 @@
                 <li class="tab col s2"><a href="#math">Foundational Math</a></li>
                 <li class="tab col s2"><a href="#useful-tools">Useful Tools</a></li>
             </ul>
+            </div>
             </div>
             <br />
             <div class="container">
@@ -85,22 +87,12 @@
                 <h4>For Those Looking for a Complete Introduction to Computer Science:</h4>
 
                 <!-- trying to dynamically load resources from java -->
-                <div class="row">
-                    <div class="col s12 m12">
-                    <div class="card brown lighten-2" id="resources-list">
-                        <div class="card-content white-text">
-                        <span class="card-title" id="resourceTitle">Invitation to Computer Science</span>
-                        <p id="resource-info">Though we won’t reference too many textbooks on this page, here is one that is commonly used in many introductory courses. While you can learn code from it, it does a great job of giving you a sample of many different fields in computer science, giving you an opportunity to challenge yourself while also discovering new interests. The downside to this resource is that it is an expensive textbook. However, you can probably find this wherever you get your textbooks for reasonable, or in some cases, absent prices.</p>
-                        </div>
-                        <div class="card-action pink-text lighten-5">
-                        <a href="https://www.amazon.com/Invitation-Computer-Science-G-Michael-Schneider/dp/1337561916">View Book on Amazon</a>
-                        
-                        </div>
-                    </div>
-                    </div>
+                <div id="getting-started-container">
+                
                 </div>
                 <!--------->
 
+                <!--                
                  <div class="row">
                     <div class="col s12 m12">
                         <div class="card brown lighten-2">
@@ -144,15 +136,19 @@
                 </div>
                 </div>
             </div>
+        -->
             
             </div>
 
             <div id="java" class="col s12">
                 <h4>For Those Looking Specifically for Java Resources:</h4>
+                <div id="java-container">
+                
+                </div>
                 <div class="row">
-                <div class="col s12 m12">
-                <div class="card brown lighten-2">
-                    <div class="card-content white-text">
+                <div class="col s12 m12 white-text">
+                <div class="card brown lighten-2 white-text">
+                    <div class="card-content">
                     <span class="card-title">Big Java: Early Objects</span>
                     <p>If you are someone who enjoys learning through a textbook, then this is a great resource. The breadth of problems provided in this book is particularly valuable, since some problems are accessible and understandable for beginners with no experience, while others can be challenging even for those who have prior background. The downside to this resource is that it is an expensive textbook. However, you can probably find this wherever you get your textbooks for reasonable, or in some cases, absent prices.</p>
                     </div>
