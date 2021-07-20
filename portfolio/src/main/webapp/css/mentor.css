@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+main {
+    height: 100vh;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Vollkorn", serif;
+}
+
+nav .nav-wrapper {
+  background-color: #56494c;
+}
+
+nav .brand-logo {
+  margin-left: 2%;
+}
+
+.landing {
+  background-image: url("../images/students-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+}
+
+.inline-block {
+  display: inline-block;
+  font-weight: 900;
+}
+
+.landing-text {
+  color: #fff;
+  margin-left: 5%;
+}
+
+.landing-text p {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.description {
+  height: 110vh;
+  width: 100%;
+  background-color: #f5e4d7;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description-text {
+  color: #fff;
+  margin-top: 10%;
+}
+
+.description-paragraph {
+  margin-top: 4%;
+  font-size: 120%;
+  color: #56494c;
+  line-height: 1.5em;
+  width: 45%;
+}
+
+.offerings {
+  height: 115vh;
+  display: flex;
+}
+
+.offerings-row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex: 50%;
+  color: #fff;
+}
+
+.col-right {
+  background-color: #56494c;
+}
+
+.col-right-heading {
+  margin-top: 10%;
+  margin-left: 8%;
+}
+
+
+.future {
+  color: antiquewhite;
+}
+
+.col-pic {
+  background-image: url("../images/collab.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background-color: #f5e4d7 !important;
+  color: #56494c;
+}
+
+footer > * {
+  color: #56494c;
+}
+
+footer a {
+  color: #56494c;
+}
+
+footer p {
+  color: #56494c;
+}
