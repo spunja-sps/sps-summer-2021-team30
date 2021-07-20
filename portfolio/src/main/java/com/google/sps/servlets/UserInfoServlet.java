@@ -29,10 +29,10 @@ public class UserInfoServlet extends HttpServlet {
 
     // Print the value so you can see it in the server logs.
     System.out.println("This is the first name: " + firstName);
-    System.out.println("This is the last name: " + firstName);
-    System.out.println("This is the email: " + firstName);
-    System.out.println("This is the password: " + firstName);
-    System.out.println("This is the userType: " + firstName);
+    System.out.println("This is the last name: " + lastName);
+    System.out.println("This is the email: " + email);
+    System.out.println("This is the password: " + password);
+    System.out.println("This is the userType: " + userType);
 
     // Create entity to store in Datastore
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
