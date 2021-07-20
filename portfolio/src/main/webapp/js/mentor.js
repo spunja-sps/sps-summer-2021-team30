@@ -1,15 +1,27 @@
-window.onload = function() {
-    this.loadMentors();
+window.onload = function(){
+    this.loadMentees();
 }
 
-function loadMentors() {
+function loadMentees() {
+    
     fetch('/load-mentees').then(response => response.json()).then((mentees) => {
-        const menteeListElement = document.getElementById('mentor-list');
-        console.log("mentors: " + mentees);
+        const menteeListElement = document.getElementById('mentee-list');
+        console.log("Mentee element: " + mentees);
         mentees.forEach((user) => {
+            console.log("user: " + user);
             menteeListElement.appendChild(createUserElement(user));
         })
+        
     });
+    
+   /*
+   var mentees = [{id: 1, firstName: "Mary", lastName: "Smith", email: "user@email.com", password: "MyPassword", userType: "Mentee"}];
+   const menteeListElement = document.getElementById('mentee-list');
+   mentees.forEach((user) => {
+    console.log("user: " + user.firstName);
+    menteeListElement.appendChild(createUserElement(user));
+   });
+   */
 }
 
 function createUserElement(user) {
