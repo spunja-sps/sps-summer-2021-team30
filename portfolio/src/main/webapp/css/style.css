@@ -197,6 +197,7 @@ nav .brand-logo {
 
 .column {
   display: flex;
+  flex-direction: column;
   flex: 50%;
   color: #fff;
 }
@@ -206,13 +207,27 @@ nav .brand-logo {
 }
 
 .col-right-heading {
-  margin-top: 10%;
-  margin-left: 8%;
+  margin-top: 20%;
+  margin-bottom: 15%;
+  text-align: center;
 }
-
 
 .future {
   color: antiquewhite;
+}
+
+.right-col-item {
+  background-color: #f5e4d7;
+  color: #56494c;
+  height: 100px;
+  width: 400px;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.right-col-item:hover {
+  opacity: 0.2;
+  transition: opacity 0.8s;
 }
 
 .col-pic {

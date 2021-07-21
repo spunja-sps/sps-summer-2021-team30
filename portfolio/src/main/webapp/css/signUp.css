@@ -84,9 +84,30 @@ h2 {
 }
 
 .sign-up-text {
-    margin-top: 12%;
+    margin-top: 8%;
 }
 
 .form-container {
-    margin-top: 15%;
+    margin-top: 10%;
 }
+
+.btn {
+	background-color: #56494c !important;
+	margin-top: 8%;
+	margin-left: 35%;
+}
+
+.center-align {
+	margin-left: 10% !important;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #56494c !important;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+	border: 2px solid #56494c !important;
+}
+
+
+
