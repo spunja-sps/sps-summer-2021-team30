@@ -165,7 +165,7 @@ nav .brand-logo {
 }
 
 .description {
-  height: 110vh;
+  height: 115vh;
   width: 100%;
   background-color: #f5e4d7;
   display: flex;
@@ -174,16 +174,34 @@ nav .brand-logo {
 }
 
 .description-text {
-  color: #fff;
-  margin-top: 10%;
+  font-family: 'Nanum Myeongjo', serif;
+  color: rgb(34, 33, 33);
+  font-size: 30px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: 10px 0 24px;
+  line-height: 50px;
+  margin-top: 15%;
+}
+
+.description-text-2 {
+  font-family: 'Nanum Myeongjo', serif;
+  color: #56494c;
+  font-size: 65px; 
+  font-weight: 900;
+  line-height: 60px; 
+  margin: 10px 0 20px; 
+  text-transform: uppercase; 
+  margin: 10px 0 24px;
 }
 
 .description-paragraph {
-  margin-top: 4%;
+  font-family: 'Orienta', sans-serif;
+  margin-top: 2%;
   font-size: 120%;
   color: #56494c;
   line-height: 1.5em;
-  width: 45%;
+  width: 60%;
 }
 
 .offerings {
