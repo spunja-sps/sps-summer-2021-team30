@@ -48,25 +48,11 @@
                     <label for="last_name">Last Name</label>
                   </div>
                 </div>
-                 <div class="row">
-                   <div class="input-field col s6">
-                     <input type="radio" id="mentee" name="user_type" value="mentee" checked>
-                     <label for="mentee">Mentee</label>
-                   </div>
-                   <div class="input-field col s6">
-                     <input type="radio" id="mentor" name="user_type" value="mentor" style="display: inline-block;">
-                     <label for="mentor">Mentor</label>
-                   </div>
-                 </div>
-                  <!-- div class="input-field col s12">
-                    <input
-                      disabled
-                      value="I am not editable"
-                      id="disabled"
-                      type="text"
-                      class="validate"
-                    />
-                    <label for="disabled">Disabled</label>
+
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" name="email" type="email" class="validate" />
+                    <label for="email">Email</label>
                   </div>
                 </div -->
                 <div class="row">
@@ -75,15 +61,34 @@
                     <label for="password">Password</label>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="email" name="email" type="email" class="validate" />
-                    <label for="email">Email</label>
+
+                <div class="row center-align">
+                  <p>I am a:</p>
+                  <div class="col s6">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Mentor</span>
+                      </label>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Mentee</span>
+                      </label>
+                    </p>
                   </div>
                 </div>
-                <div>
-                    <button>Submit</button>
-                </div>
+                <button
+                  class="btn waves-effect waves-light"
+                  type="submit"
+                  name="action"
+                >
+                  Submit
+                  <i class="material-icons right">send</i>
+                </button>
               </form>
             </div>
           </div>
