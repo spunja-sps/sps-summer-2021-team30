@@ -236,7 +236,7 @@ nav .brand-logo {
 
 .right-col-item {
   background-color: #f5e4d7;
-  color: #F3686D;
+  color: #f5b057;
   height: 100px;
   width: 400px;
   text-align: center;
@@ -253,7 +253,6 @@ nav .brand-logo {
   background-image: url("../images/collab.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* 130 */
   background-position: -170px 0; /* horizontal vertical */
 }
 
