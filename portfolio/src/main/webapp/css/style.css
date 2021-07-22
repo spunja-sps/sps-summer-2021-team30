@@ -253,6 +253,8 @@ nav .brand-logo {
   background-image: url("../images/collab.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  /* 130 */
+  background-position: -170px 0; /* horizontal vertical */
 }
 
 footer {
