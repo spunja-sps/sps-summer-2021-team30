@@ -24,13 +24,13 @@ public class LoadMentorsServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     Query<Entity> query =
-        Query.newEntityQueryBuilder().setKind("User").setOrderBy(OrderBy.desc("timestamp")).build();
+        Query.newEntityQueryBuilder().setKind("User").setOrderBy(OrderBy.desc("firstName")).build();
     QueryResults<Entity> results = datastore.run(query);
 
     List<User> mentors = new ArrayList<>();
     while(results.hasNext()) {
       Entity entity = results.next();
-      if (entity.getString("userType") == "mentor") {
+      if (entity.getString("userType").equals("mentor")) {
         long id = entity.getKey().getId();
         String firstName = entity.getString("firstName");
         String lastName = entity.getString("lastName");
