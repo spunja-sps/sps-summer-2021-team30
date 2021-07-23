@@ -17,15 +17,11 @@ function createUserElement(user) {
     userElement.className = 'User';
 
     const button = document.createElement('a');
-    // waves-effect waves-teal btn-flat
     button.classList.add('waves-effect');
     button.classList.add('waves-teal');
     button.classList.add('btn-flat');
     button.innerHTML = user.firstName + " " + user.lastName + "; Email: " + user.email;
 
-    //const titleElement = document.createElement('span');
-    //titleElement.innerText = 'Name: ' + user.firstName + ' ' + user.lastName + '; Email: ' + user.email;
-    //userElement.appendChild(titleElement);
     userElement.appendChild(button);
     return userElement;
 }
