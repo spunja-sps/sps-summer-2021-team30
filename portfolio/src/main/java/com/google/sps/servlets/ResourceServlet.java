@@ -58,6 +58,12 @@ public class ResourceServlet extends HttpServlet {
         "If you are a visual learner, then this is a resource for you. While there are many video tutorials out there, this playlist has great production quality and is very extensive. While you need to actually code in order to learn, even just watching this playlist is a great supplement to whatever other resources you are using. ", 
         LocalDateTime.now()));
 
+    // Web Development
+    resourceList.add(new Resource(6, 
+        "The Odin Project",
+        "If you know that you want to spend a good amount of time becoming a proficient web developer, then this is the comprehensive resource for you. Here, you can learn front-end and back-end development in detail by being challenged with fun, rigorous projects. A benefit of this resource is that it teaches you various ways of setting up a development environment for your projects. Additionally, it frequently points you to great outside resources (like this page is doing). Most importantly, it has a very active Discord server, which fosters an aspect of community rarely found elsewhere on learning platforms.", 
+        LocalDateTime.now()));
+
 
     String message_as_json = new Gson().toJson(resourceList);
     response.setContentType("application/json;");
