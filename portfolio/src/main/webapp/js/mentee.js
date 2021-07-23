@@ -3,11 +3,11 @@ window.onload = function() {
 }
 
 function loadMentors() {
-    fetch('/load-mentors').then(response => response.json()).then((mentees) => {
-        const menteeListElement = document.getElementById('mentor-list');
-        console.log("mentors: " + mentees);
-        mentees.forEach((user) => {
-            menteeListElement.appendChild(createUserElement(user));
+    fetch('/load-mentors').then(response => response.json()).then((mentors) => {
+        const mentorListElement = document.getElementById('mentor-list');
+        console.log("mentors: " + mentors);
+        mentors.forEach((user) => {
+            mentorListElement.appendChild(createUserElement(user));
         })
     });
 }
